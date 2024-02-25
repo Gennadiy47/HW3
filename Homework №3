@@ -1,0 +1,70 @@
+//
+//  main.c
+//  hw3
+//
+//  Created by Геннадий Матвиенко on 26.02.2024.
+//
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+// Задача 1. Наибольшее из пяти чисел.
+
+int main(int argc, const char * argv[])
+{
+    setlocale(LC_CTYPE,"Russian");
+    int a,b,c,d,e,m;
+    printf("Введите пять целых чисел:\n ");
+    scanf("%d%d%d%d%d",&a,&b,&c,&d,&e);
+    m = a;
+    if (m < b) m = b;
+    if (m < c) m = c;
+    if (m < d) m = d;
+    if (m < e) m = e;
+
+
+    printf("наибольшое число = %d\n", m);
+    return 0;
+}
+___________________________________________________________________________
+int main(int argc, const char * argv[])
+{
+    setlocale(LC_CTYPE,"Russian");
+    int a,b,c,d,e,m;
+    printf("Введите пять целых чисел:\n ");
+    scanf("%d%d%d%d%d",&a,&b,&c,&d,&e);
+    m = a;
+
+
+    if (m > b) m = b;
+    if (m > c) m = c;
+    if (m > d) m = d;
+    if (m > e) m = e;
+
+
+    printf("наименьшее число = %d\n", m);
+    return 0;
+
+}
+____________________________________________________________________________-
+// Задача 3. Ввести три числа и определить, верно ли, что они вводились в порядке
+//возрастания.
+
+int main(int argc, const char * argv[]){
+    setlocale(LC_CTYPE,"Russian");
+    int a,b,c;
+    printf("Введите три целых числа в порядке возрастания:\n");
+    scanf("%d%d%d",&a,&b,&c);
+
+    if (a < b,b < c,a < c){
+        printf("YES");
+    }
+        else
+            {
+             printf("NO");
+        }
+
+    return 0;
+    }
+
+
