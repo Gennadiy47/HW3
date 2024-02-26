@@ -66,5 +66,39 @@ int main(int argc, const char * argv[]){
 
     return 0;
     }
+__________________________________________________________________________________
+//Задача 4. Какое время года
+//Ввести номер месяца и вывести название времени года.
+int main(int argc, const char * argv[]){
+    setlocale(LC_CTYPE,"RUSSIAN");
+
+    char* month[] = {
+            "",
+            "Winter",
+            "Winter",
+            "Spring",
+            "Spring",
+            "Spring",
+            "Summer",
+            "Summer",
+            "Summer",
+            "Autumn",
+            "Autumn",
+            "Autumn",
+            "Winter"
+    };
+
+    int n;
+    printf("Введите номер месяца: ");
+    scanf("%d", &n);
+    if(n > 0 && n < 13)
+        printf("Вы ввели %d - %s", n, month[n]);
+    else
+        printf("Нет такого месяца");
+
+
+    return 0;
+}
+
 
 
